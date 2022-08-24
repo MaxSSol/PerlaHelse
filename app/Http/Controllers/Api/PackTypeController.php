@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\PackValueRequest;
 use App\Services\PackService;
 use Illuminate\Http\Request;
 
@@ -19,9 +20,9 @@ class PackTypeController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public function index(PackValueRequest $request)
     {
-        return response()->json($this->service->getPackList()->all());
+        return response()->json($this->service->getPackList($request)->all());
     }
 
     /**
