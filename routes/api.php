@@ -147,3 +147,12 @@ Route::get('articles/{id}/pageviews', function ($id) {
 
     return response()->json(new JsonResponse(['pvData' => $data]));
 });
+
+Route::group(['middleware' => 'auth:sanctum'], function() {
+    Route::apiResource('cities', 'Api\CityController');
+    Route::apiResource('cargo/types', 'Api\CargoTypeController');
+    Route::apiResource('service/types', 'Api\ServiceTypeController');
+    Route::apiResource('backward/types', 'Api\BackwardDeliveryController');
+    Route::apiResource('pack/types', 'Api\PackTypeController');
+    Route::apiResource('document/price', 'Api\DocumentPriceController');
+});
