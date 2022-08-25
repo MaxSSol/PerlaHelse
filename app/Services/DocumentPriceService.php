@@ -21,15 +21,15 @@ class DocumentPriceService
             'modelName' => 'InternetDocument',
             'calledMethod' => $this->getMethod(),
             'methodProperties' => [
-                'CitySender' => $request->CitySender,
-                'CityRecipient' => $request->CityRecipient,
-                'Weight' => $request->Weight,
-                'ServiceType' => $request->ServiceType,
-                'Cost' => $request->Cost,
-                'CargoType' => $request->CargoType,
-                'SeatsAmount' => $request->SeatsAmount,
-                'PackRef' => $request->PackRef,
-                'PackCount' => $request->PackCount,
+                'CitySender' => $request->citySender,
+                'CityRecipient' => $request->cityRecipient,
+                'Weight' => $request->weight,
+                'ServiceType' => $request->serviceType,
+                'Cost' => $request->cost,
+                'CargoType' => $request->cargoType,
+                'SeatsAmount' => $request->seatsAmount,
+                'PackRef' => $request->packRef,
+                'PackCount' => $request->packCount,
             ]
         ]);
 
