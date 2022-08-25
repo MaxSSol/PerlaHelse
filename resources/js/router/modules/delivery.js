@@ -13,7 +13,7 @@ const deliveryRoutes = {
   children: [
     {
       path: 'pricing',
-      component: () => import('@/views/pricing/Pricing'),
+      component: () => import('@/views/delivery/Pricing'),
       name: 'pricing',
       meta: {
         title: 'pricing',
