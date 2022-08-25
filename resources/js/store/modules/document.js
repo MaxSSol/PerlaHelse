@@ -25,7 +25,6 @@ export default {
   },
   actions: {
     fetchDocumentPrice({ commit }, params) {
-      console.log(params);
       // eslint-disable-next-line no-undef
       axios.get('/api/document/price', {
         params: params,
