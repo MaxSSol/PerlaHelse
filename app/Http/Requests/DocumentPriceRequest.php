@@ -24,16 +24,16 @@ class DocumentPriceRequest extends FormRequest
     public function rules()
     {
         return [
-            'CitySender' => 'required|string',
-            'CityRecipient' => 'required|string',
-            'Weight' => 'required|string',
-            'ServiceType' => 'required|string',
-            'Cost' => 'required|string',
-            'CargoType' => 'required|string',
-            'SeatsAmount' => 'required|string',
-            'Amount' => 'string',
-            'PackCount' => 'string',
-            'PackRef' => 'string',
+            'citySender' => 'required|string',
+            'cityRecipient' => 'required|string',
+            'weight' => 'required|string',
+            'serviceType' => 'required|string',
+            'cost' => 'required|string',
+            'cargoType' => 'required|string',
+            'seatsAmount' => 'required|string',
+            'amount' => 'string',
+            'packCount' => 'string',
+            'packRef' => 'string',
         ];
     }
 }
